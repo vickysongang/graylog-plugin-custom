@@ -1,0 +1,30 @@
+{
+  "name": "Custom",
+  "version": "2.5.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server",
+    "build": "./node_modules/.bin/webpack",
+    "lint": "./node_modules/.bin/eslint -c .eslintrc src/**/*"
+  },
+  "keywords": [
+    "graylog"
+  ],
+  "author": "SongAng",
+  "license": "MIT",
+  "dependencies": {
+    "echarts": "^4.2.0-rc.2",
+    "echarts-for-react": "^2.0.15-beta.0",
+    "react-d3-tree": "^1.12.2",
+    "react-sortable-tree": "^2.6.0",
+    "react-treetable": "^5.4.0"
+  },
+  "devDependencies": {
+    "webpack": "^3.4.1",
+    "graylog-web-plugin": "file:../graylog2-server/graylog2-web-interface/packages/graylog-web-plugin"
+  }
+}
