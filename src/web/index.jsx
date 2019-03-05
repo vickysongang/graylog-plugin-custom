@@ -6,7 +6,8 @@ import { PluginManifest, PluginStore } from 'graylog-web-plugin/plugin';
 import packageJson from '../../package.json';
 
 import Trace from 'pages/Trace';
-import Monitor from 'pages/Monitor';
+import MonitorCenter from 'pages/MonitorCenter';
+import MonitorRequestDetail from 'pages/MonitorRequestDetail';
 import FiledAnayzerChartComponent from 'components/FieldAnayzerChartComponent';
 import ChartVisualization from 'pages/ChartVisualization';
 
@@ -37,13 +38,14 @@ const manifest = new PluginManifest(packageJson, {
   ],
   routes: [
    { path: '/trace', component: Trace},
-   { path: '/monitor', component: Monitor},
+   { path: '/monitor/center', component: MonitorCenter},
+   { path: '/monitor/request', component: MonitorRequestDetail},
   ],
 
   // Adding an element to the top navigation pointing to /sample named "Sample":
 
   navigation: [
-   { path: '/monitor', description: 'Monitor' },
+   { path: '/monitor/center', description: 'Monitor' },
   ]
 });
 

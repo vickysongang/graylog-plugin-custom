@@ -57,7 +57,6 @@ const FiledAnayzerChartComponent = React.createClass({
   },
 
   _setupTimer(refresh) {
-      console.log("refreshrefreshrefreshrefresh:", refresh);
     this._stopTimer();
     if (refresh.enabled) {
         this.timer = setInterval(() => {
@@ -135,8 +134,9 @@ const FiledAnayzerChartComponent = React.createClass({
                           title="Customize"
                           id="customize-field-graph-dropdown"
                           pullRight>
-              <MenuItem onSelect={() => {this._showVizOptions('count')}}>Count</MenuItem>
-              <MenuItem onSelect={() => {this._showVizOptions('ratio')}}>Ratio</MenuItem>
+              <MenuItem onSelect={() => {this._showVizOptions('count')}}>访问量</MenuItem>
+              <MenuItem onSelect={() => {this._showVizOptions('ratio')}}>指定访问量占比</MenuItem>
+              <MenuItem onSelect={() => {this._showVizOptions('avgRespTime')}}>平均响应时间</MenuItem>
           </DropdownButton>
       );
 

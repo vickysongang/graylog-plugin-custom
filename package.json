@@ -19,6 +19,7 @@
   "dependencies": {
     "echarts": "^4.2.0-rc.2",
     "echarts-for-react": "^2.0.15-beta.0",
+    "moment": "^2.24.0",
     "react-d3-tree": "^1.12.2",
     "react-sortable-tree": "^2.6.0",
     "react-treetable": "^5.4.0"
